@@ -11,10 +11,15 @@ categories:
   - "law firm"
 
 cities:
-  - "Kolkata, India"
   - "Toronto, Canada"
+  - "Vancouver, Canada"
   - "Austin, USA"
-  - "Manchester, UK"
+  - "Chicago, USA"
+  - "New York, USA"
+  - "Sydney, Australia"
+  - "Melbourne, Australia"
+  - "Dubai, UAE"
+  - "Singapore"
 
 # Set to true to skip EU/UK businesses (reduces GDPR/PECR exposure).
 # Set to false if you're comfortable including them.
@@ -51,4 +56,4 @@ sender_name: "Tarunjit Biswas"
 sender_email: "tarunjit.biswas@yahoo.com"
 # Physical address is legally required for compliant commercial email (CAN-SPAM).
 # Use a city-level address at minimum, e.g. "Krishnanagar, West Bengal, India"
-sender_physical_address: "REPLACE_WITH_YOUR_ADDRESS"
+sender_physical_address: "Kolkata, West Bengal, India"
