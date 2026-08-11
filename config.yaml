@@ -1,0 +1,54 @@
+# ---- WHO TO TARGET ----
+# Each combination of category x city becomes a Google Places search.
+# Add/remove freely. Keep the list reasonably sized (~10-20 combos is plenty
+# to generate 100 fresh leads/day once dedup kicks in).
+categories:
+  - "restaurant"
+  - "gym"
+  - "hair salon"
+  - "dentist"
+  - "real estate agency"
+  - "law firm"
+
+cities:
+  - "Kolkata, India"
+  - "Toronto, Canada"
+  - "Austin, USA"
+  - "Manchester, UK"
+
+# Set to true to skip EU/UK businesses (reduces GDPR/PECR exposure).
+# Set to false if you're comfortable including them.
+exclude_eu_uk: true
+
+# ---- SENDING LIMITS ----
+daily_send_limit: 100          # hard cap per run
+# Recommended: start LOW on Yahoo and ramp up over ~2 weeks so the account
+# doesn't get flagged as abusive on day one. Override via CLI arg if needed.
+warmup_start_limit: 10
+warmup_increase_per_day: 10    # +10/day until it hits daily_send_limit
+
+# ---- EMAIL CONTENT ----
+subject: "Quick idea to save you time with AI automation"
+body_template: |
+  Hi {name},
+
+  I help businesses save time and attract more customers using AI automation.
+  For example, I can set up a chatbot that answers customer queries instantly
+  or create a system that generates daily social media posts automatically.
+
+  Would you like me to show you a quick demo?
+
+  Best,
+  Tarunjit Biswas
+
+  --
+  You're receiving this because {business} is publicly listed as a local business.
+  Not interested? Just reply "unsubscribe" and I won't contact you again.
+  Sender: Tarunjit Biswas, tarunjit.biswas@yahoo.com
+
+# ---- SENDER (fill in your details) ----
+sender_name: "Tarunjit Biswas"
+sender_email: "tarunjit.biswas@yahoo.com"
+# Physical address is legally required for compliant commercial email (CAN-SPAM).
+# Use a city-level address at minimum, e.g. "Krishnanagar, West Bengal, India"
+sender_physical_address: "REPLACE_WITH_YOUR_ADDRESS"
